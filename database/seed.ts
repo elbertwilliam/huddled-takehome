@@ -175,7 +175,7 @@ function seedUserSessions(amount: number): void {
 
   // Get all user ids
   const userIdsQuery: Statement = db.prepare("SELECT id FROM users");
-  const userIds: { id: number }[] = userIdsQuery.all();
+  const userIds: { id: number }[] = userIdsQuery.all() as {id: number}[];
 
   // Seed the user sessions table
   const userSessions: UserSession[] = Array.from(
@@ -274,11 +274,11 @@ function seedVisits(amount: number): void {
 
   // Get all artist ids
   const artistIdsQuery: Statement = db.prepare("SELECT id FROM artists");
-  const artistIds: { id: number }[] = artistIdsQuery.all();
+  const artistIds: { id: number }[] = artistIdsQuery.all() as { id: number}[];
 
   // Get all sessions
   const sessionsQuery: Statement = db.prepare("SELECT id FROM sessions");
-  const sessions: { id: number }[] = sessionsQuery.all();
+  const sessions: { id: number }[] = sessionsQuery.all() as { id: number}[];
 
   // Generate mock data for visits
   const visits: Visit[] = Array.from({ length: amount }, () => {
@@ -331,15 +331,15 @@ function seedUserEvents(amount: number): void {
 
   // Get all user ids
   const userIdsQuery: Statement = db.prepare("SELECT id FROM users");
-  const userIds: { id: number }[] = userIdsQuery.all();
+  const userIds: { id: number }[] = userIdsQuery.all() as { id: number}[];
 
   // Get all artist ids
   const artistIdsQuery: Statement = db.prepare("SELECT id FROM artists");
-  const artistIds: { id: number }[] = artistIdsQuery.all();
+  const artistIds: { id: number }[] = artistIdsQuery.all() as { id: number}[];
 
   // Get all tracks
   const tracksQuery: Statement = db.prepare("SELECT id FROM tracks");
-  const tracks: { id: number }[] = tracksQuery.all();
+  const tracks: { id: number }[] = tracksQuery.all() as { id: number}[];
 
   // Seed the user_events table
   const userEvents: UserEvent[] = Array.from({ length: amount }, () => {
