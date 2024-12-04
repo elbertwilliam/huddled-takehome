@@ -6,7 +6,7 @@
   </script>
   
   <!-- Render the ArtistTable component and pass the data -->
-   <div class="flex flex-col justify-center items-center w-full h-[90%] overflow-hidden">
+   <div class="flex flex-col justify-center items-center w-full h-[80%] overflow-hidden">
     <!-- artistEngagements prop is passed and pulled specific data from data-->
   <ArtistEngagement artistEngagements={data.artistEngagements} />
 </div>

@@ -82,7 +82,7 @@ You have access to the table `user_events`, which tracks various interactions us
     - The timestamps in the dataset are in UTC, but you need to convert them to the user’s local time-zone. You have access to the user’s timezone in the `users` table, so make sure you adjust the timestamps accordingly.
 4. **Visualisation**:
     - Once you have cleaned and aggregated the data, visualise the results:
-        - Create a graph that shows the total positive engagement for each artist, grouped by hour of the day (0–23).
+        - Create a graph that shows the total positive engagement for each artist, grouped by hour of the day (0-23).
         - The visualisation should allow you to easily see when an artist receives the most engagement and identify any patterns (e.g., higher engagement during evening hours).
 5. **Bonus (Optional)**:
     - For a more comprehensive analysis, you could also examine engagement patterns by day of the week (e.g., weekdays vs. weekends).

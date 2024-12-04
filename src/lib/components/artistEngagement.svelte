@@ -84,5 +84,5 @@
     });
   </script>
   
-  <canvas id="engagementChart" width="800" height="400"></canvas>
+  <canvas id="engagementChart" width="800" height="300"></canvas>
   
